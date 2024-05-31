@@ -4,4 +4,5 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "al2023-ami-2023.4.20240528.0-kernel-6.1-x86_64"
   instance_type = "t2.micro"
+  vpc_sercurity_group = "vpc-097c679d1b09aec1d"
 }
