@@ -27,12 +27,12 @@ variable "ami_id" {
 
 variable "key_name" {
   description = "Name of the SSH key pair"
-  default     = "instancekey"  # Change this to your key pair name
+  default     = "dockerfile"  # Change this to your key pair name
 }
 
 variable "security_group_name" {
   description = "Name of the security group"
-  default     = "sg-086a81d5be3c23969"
+  default     = "sg-098a2c2fc0d5582e5"
 }
 
 # Define the security group
