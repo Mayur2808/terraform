@@ -32,4 +32,3 @@ variable "key_name" {
   description = "Name of the SSH key pair"
   default     = "dockerfile1"  # Change this to your key pair name
 }
-variable ""
