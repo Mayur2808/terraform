@@ -10,21 +10,21 @@ terraform {
   }
 }
 
-resource "aws_key_pair" "my_key_pair" {
-  key_name   = "dockerfile1"
-  public_key = file("~/.ssh/id_rsa.pub") # Path to your public key
-}
+# resource "aws_key_pair" "my_key_pair" {
+#   key_name   = "dockerfile1"
+#   public_key = file("~/.ssh/id_rsa.pub") # Path to your public key
+# }
 
-resource "aws_instance" "my_instance" {
-  ami           = "ami-00beae93a2d981137" # Replace with your preferred AMI ID
-  instance_type = "t2.micro"
+# resource "aws_instance" "my_instance" {
+#   ami           = "ami-00beae93a2d981137" # Replace with your preferred AMI ID
+#   instance_type = "t2.micro"
 
-  key_name = dockerfile1
+#   key_name = dockerfile1
 
-  tags = {
-    Name = "MyInstance"
-  }
-}
+#   tags = {
+#     Name = "MyInstance"
+#   }
+# }
 
 resource "aws_iam_user" "admin_user" {
   name = "admin-user"
