@@ -19,7 +19,7 @@ resource "aws_instance" "my_instance" {
   ami           = "ami-00beae93a2d981137" # Replace with your preferred AMI ID
   instance_type = "t2.micro"
 
-  key_name = aws_key_pair.my_key_pair.key_name
+  key_name = aws_key_pair.dockerfile1_key_pair.key_name
 
   tags = {
     Name = "MyInstance"
